@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <header>
+        <nav class="flex">
+            <div class="logo flex align-center">
+                <a href="/">
+                    <img src="Images/logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="home-search flex align-center">
+                <div>
+                    <button class="home background-lightGray" aria-label="home">
+                        <span aria-hidden="true" class="transparent-bg">
+                            <img src="Images/home.svg" aria-hidden="true" alt="home" class="home-img transparent-bg">
+                        </span>
+                    </button>
+                </div>
+                <formf>
+                    <div class="search-box flex align-center background-lightGray">
+                        <div class="flex align-center transparent-bg">
+                            <button class="search background-lightGray" aria-label="search">
+                                <span aria-hidden="true" class="transparent-bg">
+                                    <img src="Images/search.svg" alt="search" class="search-img transparent-bg">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="text transparent-bg flex align-center" style="width: 100%;">
+                            <!-- <input type="search" class="transparent-bg"> -->
+                            <span class="transparent-bg color-offwhite">What do you want to play? </span>
+                            <div class="browse transparent-bg flex">
+                                <button class="browse transparent-bg" aria-label="browse">
+                                    <img src="Images/Basket.svg" alt="browse" class="transparent-bg browse-img">
+                                </button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+            </div>
+
+            <div class="options-bar transparent-bg">
+                <ul type="none" class=" options flex align-center justify-center">
+                    <li><a href="" class="color-offwhite">Premium</a></li>
+                    <li><a href="" class="color-offwhite">Support</a></li>
+                    <li><a href="" class="color-offwhite">Download</a></li>
+                    <li>
+                        <div style="background: #fff; height: 24px; margin: 0px 10px; width: 1px;"></div>
+                    </li>
+                    <li><a href="">
+                            <div class="flex align-center side-nav" style="gap: 5px;">
+                                <img src="Images/install.svg" alt="" class="install-img">
+                                <a href="" class="color-offwhite">Install App</span>
+                            </div>
+                        </a></li>
+
+                    <li><a href="" class="color-offwhite side-nav">Sign up</a></li>
+                    <li><button class="white-button"><a href="" class="side-nav bold">Log in</a></button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex panel-gap">
+        <div class="leftbar-wrapper flex">
+            <div class="leftbar column-flex background-gray">
+                <div class="heading flex align-center space-btw">
+                    <h1 style="font-size: 1rem;">
+                        Your Library
+                    </h1>
+
+                    <img src="Images/add.svg" alt="createplaylist"
+                        class="transparent-bg createplaylist-img small-image">
+
+                </div>
+
+                <div class="left-top column-flex  panel-gap">
+                    <div class="box1 box-wrapper column-flex background-lightGray">
+                        <div class="text panel-gap column-flex bold">
+                            <span style="font-size: 1rem; margin-block: 0;">Create your first playlist </span>
+                            <small>It's easy, we'll help you</small>
+                        </div>
+
+                        <div class="btn">
+                            <button class="button bold" style="font-size: 0.9rem;">
+                                <span>
+                                    Create playlist
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="box2 box-wrapper column-flex background-lightGray">
+                        <div class="text panel-gap column-flex bold">
+                            <span style="font-size: 1rem; margin-block: 0;">Let's find some podcasts to follow</span>
+                            <small>We'll keep you updated on new episodes</small>
+                        </div>
+
+                        <div class="btn">
+                            <button class="button bold" style="font-size: 0.9rem;">
+                                <span>
+                                    Browse podcasts
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="left-bottom">
+                    <ul class="grid panel-gap">
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Safety&PrivacyCenter</a></li>
+                        <li><a href="#">PrivacyPolicy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">About Ads</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+
+                    <button class="lang-btn flex align-center panel-gap">
+                        <img src="Images/globe.svg" alt="" class="globe-img small-image">
+                        <span>English</span>
+                    </button>
+                </div>
+                <div class="resizer"></div>
+            </div>
+        </div>
+
+        <div class="rightbar-wrapper background-gray">
+            <div class="rightbar column-flex panel-gap">
+                <div class="rightbar-sec-1 column-flex panel-gap">
+                    <div class="rightbar-header">
+                        <h2 class="bold">
+                            Trending Songs
+                        </h2>
+
+                        <a href="#">
+                            <span class="color-offwhite" style="font-size: 0.8675rem;">Show all</span>
+                        </a>
+                    </div>
+
+                    <div class="trendingSongs flex ">
+                        <div class="song1 column-flex panel-gap">
+                            <button class="song-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e026d73f67ed72ae8eeb251040f" alt=""
+                                    class="song-img">
+                                <span class="songTitle">
+                                    Zamaana Lage (From "Metro ... In Dino")
+                                </span>
+                                <span class="songArtists">
+                                    <a href="#">Pritam</a>,
+                                    <a href="#">Arijit Singh</a>,
+                                    <a href="#">Shashwat Singh</a>,
+                                    <a href="#">Qaisar-Ul-Jafri</a>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="song2 column-flex panel-gap">
+                            <button class="song-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02fb617ce51e77be01738a1970" alt=""
+                                    class="song-img">
+                                <span class="songTitle">
+                                    Muththa Mazhai
+                                </span>
+                                <span class="songArtists">
+                                    <a href="#">A.R. Rahman</a>,
+                                    <a href="#">Dhee Siva Ananth</a>,
+                                </span>
+
+
+                        </div>
+                        <div class="song3 column-flex panel-gap">
+                            <button class="song-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02c05d5034282ebb1a0d94a26c" alt=""
+                                    class="song-img">
+                                <span class="songTitle">
+                                    Shaky
+                                </span>
+                                <span class="songArtists">
+                                    <a href="#">Sanju Rathod</a>,
+                                    <a href="#">G-SPXRK</a>,
+                                </span>
+
+                            </button>
+                        </div>
+                        <div class="song4 column-flex panel-gap">
+                            <button class="song-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e0213437764131bfe37dacd15b5" alt=""
+                                    class="song-img">
+                                <span class="songTitle">
+                                    Jaat Intro (feat. Pranjal Dahiya)
+                                </span>
+                                <span class="songArtists">
+                                    <a href="#">Ajay Bhagta</a>,
+                                    <a href="#">Manisha Sharma</a>,
+                                    <a href="#">Kb Dhull</a>,
+                                    <a href="#">Pranjal Dahiya</a>
+                                </span>
+
+                            </button>
+                        </div>
+                        <div class="song5 column-flex panel-gap">
+                            <button class="song-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02e7a80f2e7ff3ef311f16a442" alt=""
+                                    class="song-img">
+                                <span class="songTitle">
+                                    Laal Pari (From "Housefull 5")
+                                </span>
+                                <span class="songArtists">
+                                    <a href="#">Yo Yo Honey Singha</a>,
+                                    <a href="#">Simar kaur</a>,
+                                    <a href="#">Alfaz</a>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="song6 column-flex panel-gap">
+                            <button class="song-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02bc5c0e17452219b4ebe04917" alt=""
+                                    class="song-img">
+                                <span class="songTitle">
+                                    Ishq Mera (Feat. Esha Gupta)
+                                </span>
+                                <span class="songArtists">
+                                    <a href="#">Jubin Nautiyal</a>,
+                                    <a href="#">Akashdeep Sengupta</a>,
+                                    <a href="#">Mukund Suryawanshi</a>
+                                </span>
+
+                            </button>
+                        </div>
+                        <div class="song7 column-flex panel-gap">
+                            <button class="song-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02bc0ec443e91e4d89c893dd7f" alt=""
+                                    class="song-img">
+                                <span class="songTitle">
+                                    Galiyon Ke Ghalib
+                                </span>
+                                <span class="songArtists">
+                                    <a href="#">Badshah</a>,
+                                    <a href="#">Hiten</a>
+                                </span>
+
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="rightbar-sec-2">
+                    <div class="rightbar-header">
+                        <h2 class="bold">
+                            <a href="#">Popular Artists</a>
+                        </h2>
+
+                        <a href="#">
+                            <span class="color-offwhite" style="font-size: 0.8675rem;">Show all</span>
+                        </a>
+                    </div>
+
+                    <div class="popularArtists flex panel-gap">
+                        <div class="artist1">
+                            <div class="artist-wrapper">
+                                <button class="artist-btn">
+                                    <div class="artist-img-wrapper">
+                                        <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                            alt="">
+                                    </div>
+                                    <div class="artist-text column-flex panel-gap">
+                                        <span><a href="#">Pritam</a></span>
+                                        <span class="color-offwhite">Artist</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="artist2">
+                            <div class="artist-wrapper">
+                                <button class="artist-btn column-flex panel-gap">
+                                    <div class="artist-img-wrapper">
+                                        <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                                            alt="">
+                                    </div>
+                                    <div class="artist-text column-flex panel-gap">
+                                        <span><a href="#">A.R. Rahman</a></span>
+                                        <span class="color-offwhite">Artist</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="artist3">
+                            <div class="artist-wrapper">
+                                <button class="artist-btn column-flex panel-gap">
+                                    <div class="artist-img-wrapper">
+                                        <img src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7"
+                                            alt="">
+                                    </div>
+                                    <div class="artist-text column-flex panel-gap">
+                                        <span><a href="#">Arijit Singh</a></span>
+                                        <span class="color-offwhite">Artist</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="artist4">
+                            <div class="artist-wrapper">
+                                <button class="artist-btn column-flex panel-gap">
+                                    <div class="artist-img-wrapper">
+                                        <img src="https://i.scdn.co/image/ab67616100005174bb4064bef3a825344d5eb79e"
+                                            alt="" width="50%" height="100%" style="border-radius: 50%;">
+                                    </div>
+                                    <div class="artist-text column-flex panel-gap">
+                                        <span><a href="#">Sachin-Jigar</a></span>
+                                        <span class="color-offwhite">Artist</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="artist5">
+                            <div class="artist-wrapper">
+                                <button class="artist-btn column-flex panel-gap">
+                                    <div class="artist-img-wrapper">
+                                        <img src="https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf"
+                                            alt="" width="50%" height="100%" style="border-radius: 50%;">
+                                    </div>
+                                    <div class="artist-text column-flex panel-gap">
+                                        <span><a href="#">Vishal-Shekhar</a></span>
+                                        <span class="color-offwhite">Artist</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="artist6">
+                            <div class="artist-wrapper">
+                                <button class="artist-btn column-flex panel-gap">
+                                    <div class="artist-img-wrapper">
+                                        <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84"
+                                            alt="" width="50%" height="100%" style="border-radius: 50%;">
+                                    </div>
+                                    <div class="artist-text column-flex panel-gap">
+                                        <span><a href="#">Atif Aslam</a></span>
+                                        <span class="color-offwhite">Artist</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="artist7">
+                            <div class="artist-wrapper">
+                                <button class="artist-btn column-flex panel-gap">
+                                    <div class="artist-img-wrapper">
+                                        <img src="https://i.scdn.co/image/ab67616100005174bc7e4fffd515b47ff1ebbc1f"
+                                            alt="" width="50%" height="100%" style="border-radius: 50%;">
+                                    </div>
+                                    <div class="artist-text column-flex panel-gap">
+                                        <span><a href="#">Yo Yo Honey Singh</a></span>
+                                        <span class="color-offwhite">Artist</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="rightbar-sec-3">
+                    <div class="rightbar-header">
+                        <h2 class="bold">
+                            <a href="#">Popular Albums and singles</a>
+                        </h2>
+
+                        <a href="#">
+                            <span class="color-offwhite" style="font-size: 0.8675rem;">Show all</span>
+                        </a>
+                    </div>
+
+                    <div class="popularAlbums flex ">
+                        <div class="album1 column-flex panel-gap">
+                            <button class="album-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt=""
+                                    class="album-img">
+                                <span class="AlbumTitle">
+                                    Ashiqui 2
+                                </span>
+                                <span class="albumArtists">
+                                    <a href="#">Mithoon</a>,
+                                    <a href="#">Ankit Tiwari</a>,
+                                    <a href="#">Jeet Ganguli</a>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="album2 column-flex panel-gap">
+                            <button class="album-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt=""
+                                    class="album-img">
+                                <span class="AlbumTitle">
+                                    Yeh Jawaani Hai Deewani
+                                </span>
+                                <span class="albumArtists">
+                                    <a href="#">Pritam</a>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="album3 column-flex panel-gap">
+                            <button class="album-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02711c1639b4bc0f9978ae77a6" alt=""
+                                    class="album-img">
+                                <span class="AlbumTitle">
+                                    Sanam Teri Kasam (Original Motion Picture Soundtrack)
+                                </span>
+                                <span class="albumArtists">
+                                    <a href="#">Himesh Reshamiya</a>,
+                                    <a href="#">Sameer Anjaan</a>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="album4 column-flex panel-gap">
+                            <button class="album-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e0283141000ee8ce3b893a0b425" alt=""
+                                    class="album-img">
+                                <span class="AlbumTitle">
+                                    Finding Her
+                                </span>
+                                <span class="albumArtists">
+                                    <a href="#">Kushagra</a>,
+                                    <a href="#">Bharath</a>,
+                                    <a href="#">Saaheal</a>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="album5 column-flex panel-gap">
+                            <button class="album-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02a5183fa4b99bcec1f506418d" alt=""
+                                    class="album-img">
+                                <span class="AlbumTitle">
+                                    Young G.O.A.T
+                                </span>
+                                <span class="albumArtists">
+                                    <a href="#">Cheema Y</a>,
+                                    <a href="#">Gur Sidhu</a>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="album6 column-flex panel-gap">
+                            <button class="album-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02773c5f60bcb309ef8802e4ef" alt=""
+                                    class="album-img">
+                                <span class="AlbumTitle">
+                                    Raanjhan (From "Do Patti")
+                                </span>
+                                <span class="albumArtists">
+                                    <a href="#">Sachet-Parampara</a>,
+                                    <a href="#">Kausar Munir</a>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="album7 column-flex panel-gap">
+                            <button class="album-btn">
+                                <img src="https://i.scdn.co/image/ab67616d00001e021aa5adad8593923dcdf1a7d0" alt=""
+                                    class="album-img">
+                                <span class="AlbumTitle">
+                                    Ultimate Love Songs - Arijit Singh
+                                </span>
+                                <span class="albumArtists">
+                                    <a href="#">Arijit Singh</a>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightbar-sec-4">
+                    <div class="rightbar-header">
+                        <h2 class="bold">
+                            <a href="#">Featured Charts</a>
+                        </h2>
+
+                        <a href="#">
+                            <span class="color-offwhite" style="font-size: 0.8675rem;">Show all</span>
+                        </a>
+                    </div>
+
+                    <div class="featuredCharts flex ">
+                        <div class="chart1 column-flex panel-gap">
+                            <button class="charts-btn">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                                    alt="" class="charts-img">
+                                <span class="chartsInfo">
+                                    Your weekly update of the most played tracks right now - Global.
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="chart2 column-flex panel-gap">
+                            <button class="charts-btn">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_in_default.jpg"
+                                    alt="" class="charts-img">
+                                <span class="chartsInfo">
+                                    Your weekly update of the most played tracks right now - India.
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="chart3 column-flex panel-gap">
+                            <button class="charts-btn">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                                    alt="" class="charts-img">
+                                <span class="chartsInfo">
+                                    Your daily update of the most played tracks right now - Global.
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="chart4 column-flex panel-gap">
+                            <button class="charts-btn">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg"
+                                    alt="" class="charts-img">
+                                <span class="chartsInfo">
+                                    Your weekly update of the most played tracks right now - India.Your daily update of
+                                    the most played tracks right now - India.
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="chart5 column-flex panel-gap">
+                            <button class="charts-btn">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"
+                                    alt="" class="charts-img">
+                                <span class="chartsInfo">
+                                    Your daily update of the most viral tracks right now - Global.
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="chart6 column-flex panel-gap">
+                            <button class="charts-btn">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_in_default.jpg"
+                                    alt="" class="charts-img">
+                                <span class="chartsInfo">
+                                    Your daily update of the most viral tracks right now - India.
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rightbar-footer">
+                    <hr class="footer-divider">
+
+                    <div class="footer-area flex space-btw panel-gap">
+                        <div class="footer-links flex">
+                            <div class="lists list1">
+                                <ul class="column-flex panel-gap">
+                                    <p class="bold">Company</p>
+                                    <a href="#"><span>About</span></a>
+                                    <a href="#"><span>Jobs</span></a>
+                                    <a href="#"><span>For the record</span></a>
+                                </ul>
+                            </div>
+
+                            <div class="lists list2">
+                                <ul class="column-flex panel-gap">
+                                    <p class="bold">Communities</p>
+                                    <a href="#"><span>For Artists</span></a>
+                                    <a href="#"><span>Developers</span></a>
+                                    <a href="#"><span>Advertising</span></a>
+                                    <a href="#"><span>Investors</span></a>
+                                    <a href="#"><span>Vendors</span></a>
+                                </ul>
+                            </div>
+
+                            <div class="lists list3">
+                                <ul class="column-flex panel-gap">
+                                    <p class="bold">Useful links</p>
+                                    <a href="#"><span>Support</span></a>
+                                    <a href="#"><span>Free Mobile App</span></a>
+                                </ul>
+                            </div>
+
+                            <div class="lists list4">
+                                <ul class="column-flex panel-gap">
+                                    <p class="bold">Useful links</p>
+                                    <a href="#"><span>Support</span></a>
+                                    <a href="#"><span>Free Mobile App</span></a>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="footer-socialMedia flex panel-gap ">
+                            <div class="medias media1">
+                                <a href="#">
+                                    <img src="Images/insta.svg" alt="Instagram">
+                                </a>
+                            </div>
+
+                            <div class="medias media2">
+                                <a href="#">
+                                    <img src="Images/twitter.svg" alt="Twitter">
+                                </a>
+                            </div>
+
+                            <div class="medias media3">
+                                <a href="#">
+                                    <img src="Images/facebook.svg" alt="Facebook">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="footer-divider">
+
+                    <div class="copyright-sec color-offwhite" style="padding:1rem 0;">
+                        &copy; 2025 Spotify AB
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="resizer.js"></script>
+</body>
+
+</html>
+
+<!-- left sidebar complete -->
+<!-- button thing sort -->

@@ -1,0 +1,249 @@
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.column-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-btw {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.border {
+    border: 2px solid red;
+}
+
+.background-lightGray {
+    background-color: #1f1f1f;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.background-gray {
+    background-color: #121212;
+}
+
+.transparent-bg {
+    background-color: transparent;
+}
+
+.button {
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    height: auto;
+    min-width: 0;
+    padding: 5px 20px;
+    text-align: center;
+    align-self: center;
+    vertical-align: middle;
+
+}
+
+.color-offwhite {
+    color: #b3b3b3;
+}
+
+.panel-gap {
+    gap: 8px
+}
+
+button.white-button {
+    border-radius: 2em;
+    border: 1px solid white;
+    padding: 13px;
+    margin-top: auto;
+
+}
+
+.small-image {
+    width: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+h2 {
+    margin-block-end: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+.rightbar-sec-1,
+.rightbar-sec-4 {
+    width: 100%;
+}
+
+
+.rightbar-header {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightbar-header a {
+    color: white;
+}
+
+.rightbar-wrapper {
+
+    padding-left: 3.2rem;
+}
+
+.trendingSongs,
+.popularArtists,
+.popularAlbums,
+.featuredCharts {
+    align-items: flex-start;
+    overflow-x: scroll;
+    transition: all 0.3s ease;
+    position: relative;
+    gap: 15px;
+}
+
+
+.song-btn,
+.artist-btn,
+.album-btn,
+.charts-btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    text-align: left;
+    line-height: 1.2rem;
+    padding: 12px;
+    cursor: pointer;
+
+}
+
+.song-img,
+.album-img,
+.charts-img {
+    width: 11rem;
+    height: 12rem;
+    border-radius: 8px;
+}
+
+.songTitle,
+.AlbumTitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+.songArtists,
+.albumArtists,
+.chartsInfo {
+    color: #b3b3b3;
+    font-weight: 400;
+    font-size: 0.9rem;
+    width: 11rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.artist-text a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.artist-wrapper {
+    width: 12rem;
+    flex-shrink: 0;
+}
+
+.artist-btn {
+    padding: 0.75rem;
+}
+
+.artist-img-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.artist-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.lists {
+    margin: 24px;
+}
+
+.medias {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medias img {
+    width: 1rem;
+    height: 1rem;
+    filter: invert(1);
+}
+
+.footer-links {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-area {
+    padding: 0 3.2rem;
+}
+
+.footer-socialMedia {
+    /* justify-self: end; */
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.song-btn:hover,
+.artist-btn:hover,
+.album-btn:hover,
+.charts-btn:hover{
+    border-radius: 5px;
+    height: 100%;
+    background-color: #342b2b;
+    -webkit-tap-highlight-color: transparent;
+}
